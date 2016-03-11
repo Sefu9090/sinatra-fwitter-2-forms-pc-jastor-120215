@@ -9,6 +9,9 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    Tweet.new("saul","im cool")
+    Tweet.new("sergio","i swallow")
+    Tweet.new("astor","get to work")
     @tweets = Tweet.all
     erb :index 
   end

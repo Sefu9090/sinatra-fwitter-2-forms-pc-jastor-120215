@@ -12,5 +12,5 @@ class Tweet
   def self.all 
     ALL_TWEETS
   end
-  
+
 end

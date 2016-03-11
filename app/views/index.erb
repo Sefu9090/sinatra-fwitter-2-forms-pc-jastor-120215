@@ -1,20 +1,23 @@
 <html>
   <head>
-    <title>Week 1</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <title>Fwitter</title>
+    
   </head>
   <body>
-    <div class="container">
+    
 
       <h1>Welcome to Fwitter!</h1>
 
-      <h2>Tweets!</h2>
-      <% @tweets.each do |tweet| %>
-        <p><strong><%= tweet.username %>:</strong> <%= tweet.status %></p>
-      <% end %>
+      <h2>Fweets!</h2>
 
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <ul>
+        <% @tweets.each do |tweet| %>
+        <li>
+          <%= tweet.username %>says:
+          <%= tweet.status %><
+          /li>
+      <% end %>
+      </ul>
+
   </body>
 </html>
